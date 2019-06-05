@@ -28,7 +28,9 @@ public class Arboles {
         nt.insert(15);
         nt.insert(16);
         
-        nt.display(nt.getRoot());
+        nt.displayI(nt.getRoot()); System.out.println("");
+        nt.displayPr(nt.getRoot()); System.out.println("");
+        nt.displayPs(nt.getRoot()); System.out.println("");
         
         
     }

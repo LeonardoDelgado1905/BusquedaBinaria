@@ -114,11 +114,25 @@ public class Tree<T> {
         }
     }
     
-    public void display(Node r){
+    public void displayI(Node r){
         if(r != null){
-            display(r.left);
+            displayI(r.left);
             System.out.print(" " + r.data);
-            display(r.right);
+            displayI(r.right);
+        }
+    }
+    public void displayPr(Node r){
+        if(r != null){
+            System.out.print(" " + r.data);
+            displayPr(r.left);            
+            displayPr(r.right);
+        }
+    }
+    public void displayPs(Node r){
+        if(r != null){
+            displayPs(r.left);
+            displayPs(r.right);
+            System.out.print(" " + r.data);
         }
     }
     
